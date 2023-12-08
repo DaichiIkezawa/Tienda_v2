@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+    <head th:replace="~{layout/plantilla :: head)">
+        <title>TechShop</title>
+    </head>
+    <body>
+        <!-- 1 Sección para crear el boton de agregar... llamará a una ventana modal--> 
+        <section th:fragment="botonesAgregar" class="py-4 mb-4 bg-light">
+        
+        </section>
+
+        <!-- 2 Fragmento para agregar categoria, es la ventana modal --> 
+        <section th:fragment="agregarCategoria">
+
+        </section>
+
+        <!-- 3 Sección principal para mostrar la informaccion de la entidad categoria --> 
+        <section th:fragment="listadoCategorias" id="categorias">
+
+        </section>
+
+        <!-- 4 Fragmento que se utiliza en la página modifca.html --> 
+        <section th:fragment="editarCategoria">
+
+        </section>
+
+        <!-- 5 Fragmento que se utiliza en el fragmento anterior --> 
+        <section th:fragment="botonesEditar">
+
+        </section>
+</body>
+</html>
