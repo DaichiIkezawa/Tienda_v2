@@ -1,4 +1,4 @@
-package com.tienda_v2.service.impl;
+package com.tienda.service.impl;
 
 import com.google.auth.Credentials;
 import com.google.auth.ServiceAccountSigner;
@@ -8,7 +8,7 @@ import com.google.cloud.storage.BlobInfo;
 import com.google.cloud.storage.Storage;
 import com.google.cloud.storage.Storage.SignUrlOption;
 import com.google.cloud.storage.StorageOptions;
-import com.tienda_v2.service.FirebaseStorageService;
+import com.tienda.service.FirebaseStorageService;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -20,6 +20,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 @Service
 public class FirebaseStorageServiceImpl implements FirebaseStorageService {
+
     @Override
     public String cargaImagen(MultipartFile archivoLocalCliente, String carpeta, Long id) {
         try {
@@ -45,26 +46,16 @@ public class FirebaseStorageServiceImpl implements FirebaseStorageService {
         }
     }
 
-    private String uploadFile(File file, 
-            String carpeta, 
-            String fileName) throws IOException {
+    private String uploadFile(File file, String carpeta, String fileName) throws IOException {
         //Se define el lugar y acceso al archivo .jasper
         ClassPathResource json = new ClassPathResource(rutaJsonFile + File.separator + archivoJsonFile);
-        BlobId blobId = BlobId.of(BucketName, 
-                rutaSuperiorStorage + "/" + carpeta + "/" + fileName);
-        BlobInfo blobInfo = BlobInfo.newBuilder(blobId)
-                .setContentType("media").build();
-        
-        Credentials credentials = GoogleCredentials
-                .fromStream(json.getInputStream());
-        Storage storage = StorageOptions.newBuilder()
-                .setCredentials(credentials).build().getService();
+        BlobId blobId = BlobId.of(BucketName, rutaSuperiorStorage + "/" + carpeta + "/" + fileName);
+        BlobInfo blobInfo = BlobInfo.newBuilder(blobId).setContentType("media").build();
+
+        Credentials credentials = GoogleCredentials.fromStream(json.getInputStream());
+        Storage storage = StorageOptions.newBuilder().setCredentials(credentials).build().getService();
         storage.create(blobInfo, Files.readAllBytes(file.toPath()));
-        String url = storage.signUrl(blobInfo, 
-                3650, 
-                TimeUnit.DAYS, 
-                SignUrlOption.signWith((ServiceAccountSigner) credentials))
-                .toString();
+        String url = storage.signUrl(blobInfo, 3650, TimeUnit.DAYS, SignUrlOption.signWith((ServiceAccountSigner) credentials)).toString();
         return url;
     }
 
