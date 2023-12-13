@@ -1,7 +1,7 @@
-package com.tienda.controller;
+package com.tienda_v2.controller;
 
-import com.tienda.domain.Usuario;
-import com.tienda.service.ReporteService;
+import com.tienda_v2.domain.Usuario;
+import com.tienda_v2.service.ReporteService;
 import java.io.IOException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;

@@ -1,9 +1,9 @@
-package com.tienda.controller;
+package com.tienda_v2.controller;
 
-import com.tienda.domain.Item;
-import com.tienda.domain.Producto;
-import com.tienda.service.ItemService;
-import com.tienda.service.ProductoService;
+import com.tienda_v2.domain.Item;
+import com.tienda_v2.domain.Producto;
+import com.tienda_v2.service.ItemService;
+import com.tienda_v2.service.ProductoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -1,6 +1,6 @@
-package com.tienda.dao;
+package com.tienda_v2.dao;
 
-import com.tienda.domain.Categoria;
+import com.tienda_v2.domain.Categoria;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

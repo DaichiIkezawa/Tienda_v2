@@ -1,6 +1,6 @@
-package com.tienda.service;
+package com.tienda_v2.service;
 
-import com.tienda.domain.Categoria;
+import com.tienda_v2.domain.Categoria;
 import java.util.List;
 
 

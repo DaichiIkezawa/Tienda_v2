@@ -1,6 +1,6 @@
-package com.tienda.service;
+package com.tienda_v2.service;
 
-import com.tienda.domain.Item;
+import com.tienda_v2.domain.Item;
 import java.util.ArrayList;
 import java.util.List;
 

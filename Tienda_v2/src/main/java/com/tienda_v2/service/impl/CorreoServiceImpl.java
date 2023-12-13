@@ -1,6 +1,6 @@
-package com.tienda.service.impl;
+package com.tienda_v2.service.impl;
 
-import com.tienda.service.CorreoService;
+import com.tienda_v2.service.CorreoService;
 import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeMessage;
 import org.springframework.beans.factory.annotation.Autowired;

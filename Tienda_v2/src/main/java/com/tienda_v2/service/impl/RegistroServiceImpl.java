@@ -1,9 +1,9 @@
-package com.tienda.service.impl;
+package com.tienda_v2.service.impl;
 
-import com.tienda.domain.Usuario;
-import com.tienda.service.CorreoService;
-import com.tienda.service.RegistroService;
-import com.tienda.service.UsuarioService;
+import com.tienda_v2.domain.Usuario;
+import com.tienda_v2.service.CorreoService;
+import com.tienda_v2.service.RegistroService;
+import com.tienda_v2.service.UsuarioService;
 import jakarta.mail.MessagingException;
 import java.util.Locale;
 import org.springframework.beans.factory.annotation.Autowired;

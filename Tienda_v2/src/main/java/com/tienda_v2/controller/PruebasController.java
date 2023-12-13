@@ -1,10 +1,10 @@
-package com.tienda.controller;
+package com.tienda_v2.controller;
 
-import com.tienda.domain.Categoria;
-import com.tienda.domain.Producto;
-import com.tienda.service.CategoriaService;
-import com.tienda.service.ProductoService;
-import com.tienda.service.FirebaseStorageService;
+import com.tienda_v2.domain.Categoria;
+import com.tienda_v2.domain.Producto;
+import com.tienda_v2.service.CategoriaService;
+import com.tienda_v2.service.ProductoService;
+import com.tienda_v2.service.FirebaseStorageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

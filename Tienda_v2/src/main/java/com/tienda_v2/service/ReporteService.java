@@ -1,4 +1,4 @@
-package com.tienda.service;
+package com.tienda_v2.service;
 
 import java.io.IOException;
 import java.util.Map;

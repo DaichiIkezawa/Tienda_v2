@@ -1,6 +1,6 @@
-package com.tienda.service;
+package com.tienda_v2.service;
 
-import com.tienda.domain.Usuario;
+import com.tienda_v2.domain.Usuario;
 import jakarta.mail.MessagingException;
 import org.springframework.ui.Model;
 import org.springframework.web.multipart.MultipartFile;

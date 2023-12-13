@@ -1,4 +1,4 @@
-package com.tienda.domain;
+package com.tienda_v2.domain;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

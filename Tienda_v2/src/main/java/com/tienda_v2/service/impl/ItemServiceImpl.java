@@ -1,21 +1,21 @@
-package com.tienda.service.impl;
+package com.tienda_v2.service.impl;
 
-import com.tienda.dao.FacturaDao;
-import com.tienda.domain.Producto;
-import com.tienda.domain.Usuario;
-import com.tienda.domain.Item;
-import com.tienda.service.ItemService;
+import com.tienda_v2.dao.FacturaDao;
+import com.tienda_v2.domain.Producto;
+import com.tienda_v2.domain.Usuario;
+import com.tienda_v2.domain.Item;
+import com.tienda_v2.service.ItemService;
 import java.util.List;
 import java.util.Objects;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
-import com.tienda.dao.ProductoDao;
-import com.tienda.dao.VentaDao;
-import com.tienda.domain.Factura;
-import com.tienda.domain.Venta;
-import com.tienda.service.UsuarioService;
+import com.tienda_v2.dao.ProductoDao;
+import com.tienda_v2.dao.VentaDao;
+import com.tienda_v2.domain.Factura;
+import com.tienda_v2.domain.Venta;
+import com.tienda_v2.service.UsuarioService;
 
 @Service
 public class ItemServiceImpl implements ItemService {

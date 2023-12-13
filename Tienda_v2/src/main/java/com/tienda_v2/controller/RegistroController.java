@@ -1,4 +1,4 @@
-package com.tienda.controller;
+package com.tienda_v2.controller;
 
 import com.tienda.domain.Usuario;
 import com.tienda.service.RegistroService;

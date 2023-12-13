@@ -1,10 +1,10 @@
-package com.tienda.service.impl;
+package com.tienda_v2.service.impl;
 
-import com.tienda.dao.RolDao;
-import com.tienda.dao.UsuarioDao;
-import com.tienda.domain.Rol;
-import com.tienda.domain.Usuario;
-import com.tienda.service.UsuarioService;
+import com.tienda_v2.dao.RolDao;
+import com.tienda_v2.dao.UsuarioDao;
+import com.tienda_v2.domain.Rol;
+import com.tienda_v2.domain.Usuario;
+import com.tienda_v2.service.UsuarioService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -3,16 +3,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.1.1</version>
-        <relativePath/> <!-- lookup parent from repository -->
-    </parent>
-    <groupId>com.tienda</groupId>
-    <artifactId>Tienda</artifactId>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.1.5</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+    <groupId>com.tienda_v2</groupId>
+    <artifactId>tienda</artifactId>
     <version>1</version>
-    <name>Tienda</name>
-    <description>Demo project for Spring Boot</description>
+    <name>tienda</name>
+    <description>Proyecto Web y Patrones de viernes tarde</description>
     <properties>
         <java.version>20</java.version>
     </properties>

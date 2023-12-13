@@ -1,4 +1,4 @@
-package com.tienda;
+package com.tienda_v2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
